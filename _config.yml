@@ -1,0 +1,48 @@
+# ============================================================
+# Configurazione del blog
+# Cambia questi valori con i tuoi (vedi anche about.md)
+# ============================================================
+
+title: "mar.te.log"
+tagline: "log di mar.te — pensieri, scritti, appunti"
+description: "Un piccolo spazio personale dove mar.te pubblica pensieri e scritti, di tanto in tanto."
+
+# Username Buttondown per il modulo newsletter (senza https://)
+# Es. se il tuo Buttondown è su https://buttondown.com/marco, scrivi: marco
+buttondown_username: "cambia-questo"
+
+# URL del sito una volta pubblicato, es. https://tuoutente.github.io
+# oppure https://tuoutente.github.io/nome-repo se non è un repo "utente"
+url: "https://marcotedesco135-rgb.github.io"
+baseurl: ""
+
+# Costruzione
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+future: false
+timezone: Europe/Rome
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  posts_limit: 20
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

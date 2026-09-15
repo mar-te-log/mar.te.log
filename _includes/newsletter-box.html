@@ -1,0 +1,15 @@
+<div class="newsletter-box">
+  <p class="newsletter-box-title">Iscriviti alla newsletter</p>
+  <p class="newsletter-box-copy">Un'email ogni volta che pubblico un nuovo articolo. Niente spam, cancellazione in un click.</p>
+  <form
+    action="https://buttondown.com/api/emails/embed-subscribe/{{ site.buttondown_username }}"
+    method="post"
+    target="popupwindow"
+    onsubmit="window.open('https://buttondown.com/{{ site.buttondown_username }}', 'popupwindow')"
+    class="newsletter-form"
+  >
+    <label for="bd-email" class="visually-hidden">Email</label>
+    <input type="email" id="bd-email" name="email" placeholder="la-tua-email@esempio.com" required>
+    <input type="submit" value="Iscrivimi">
+  </form>
+</div>

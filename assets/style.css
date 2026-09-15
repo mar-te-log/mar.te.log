@@ -1,0 +1,283 @@
+/* ==========================================================
+   mar.te.log — tema minimal, monospace, stile terminale anni 90
+   ========================================================== */
+
+:root {
+  --bg: #f1ede2;
+  --fg: #201f1a;
+  --muted: #726c5c;
+  --accent: #8a5a1f;
+  --border: #d6d0bd;
+  --selection-bg: #201f1a;
+  --selection-fg: #f1ede2;
+  --max-width: 640px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #08100c;
+    --fg: #c9f2d5;
+    --muted: #5e8a6c;
+    --accent: #4fe08a;
+    --border: #1c2b20;
+    --selection-bg: #4fe08a;
+    --selection-fg: #08100c;
+  }
+}
+
+* { box-sizing: border-box; }
+
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-fg);
+}
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: ui-monospace, "SF Mono", "Cascadia Mono", "JetBrains Mono", "Courier New", monospace;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+a {
+  color: var(--fg);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--bg);
+  background: var(--fg);
+  text-decoration: none;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed var(--border);
+}
+
+.site-title {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.site-title:hover {
+  color: var(--bg);
+  background: var(--accent);
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 1s steps(1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor { animation: none; }
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.site-tagline {
+  margin: 0.4rem 0 0.9rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  font-size: 0.85rem;
+}
+
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: var(--bg);
+  background: var(--muted);
+}
+
+main { min-height: 40vh; }
+
+/* --- lista articoli: solo data + titolo, niente fronzoli --- */
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px dashed var(--border);
+}
+
+.post-item:first-child { border-top: 1px dashed var(--border); }
+
+.post-item-date {
+  color: var(--muted);
+  font-size: 0.85rem;
+  flex: 0 0 auto;
+  padding-top: 0.05rem;
+}
+
+.post-item-title {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.post-item-title:hover {
+  color: var(--bg);
+  background: var(--accent);
+}
+
+.post-item-empty {
+  color: var(--muted);
+  border-top: 1px dashed var(--border);
+}
+
+.subscribe-line {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.subscribe-line a { color: var(--accent); }
+
+/* --- articolo singolo --- */
+
+.post-meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0 0 0.2rem;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  margin: 0 0 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.post-content img { max-width: 100%; height: auto; }
+
+.post-content pre {
+  overflow-x: auto;
+  background: var(--border);
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+.post-content blockquote {
+  margin: 1.25rem 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+}
+
+.post-footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border);
+  font-size: 0.9rem;
+}
+
+/* --- newsletter --- */
+
+.newsletter-box {
+  margin: 1.5rem 0;
+  padding: 1rem 1.1rem;
+  border: 1px dashed var(--border);
+}
+
+.newsletter-box-title {
+  margin: 0 0 0.3rem;
+  font-weight: 700;
+}
+
+.newsletter-box-copy {
+  margin: 0 0 0.9rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1 1 200px;
+  min-width: 0;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--fg);
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.newsletter-form input[type="email"]:focus {
+  outline: 1px solid var(--accent);
+}
+
+.newsletter-form input[type="submit"] {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--fg);
+  background: var(--fg);
+  color: var(--bg);
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.newsletter-form input[type="submit"]:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.site-footer {
+  margin-top: 3.5rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border);
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+@media (max-width: 400px) {
+  .wrap { padding: 1.5rem 1rem 3rem; }
+  .post-item { flex-direction: column; gap: 0.2rem; }
+}

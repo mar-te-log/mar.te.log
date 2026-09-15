@@ -1,0 +1,18 @@
+---
+layout: default
+title: Articoli
+---
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li class="post-item">
+    <span class="post-item-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <a class="post-item-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  {% else %}
+  <li class="post-item post-item-empty">// il primo articolo arriva presto</li>
+  {% endfor %}
+</ul>
+
+<p class="subscribe-line">
+  <a href="{{ '/newsletter/' | relative_url }}">[iscriviti alla newsletter]</a>
+</p>
