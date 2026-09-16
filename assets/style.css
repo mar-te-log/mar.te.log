@@ -1,28 +1,18 @@
 /* ==========================================================
    mar.te.log — tema minimal, monospace, stile terminale anni 90
+   Tema fisso scuro/verde (uguale su ogni dispositivo, non segue
+   le impostazioni chiaro/scuro del sistema)
    ========================================================== */
 
 :root {
-  --bg: #f1ede2;
-  --fg: #201f1a;
-  --muted: #726c5c;
-  --accent: #8a5a1f;
-  --border: #d6d0bd;
-  --selection-bg: #201f1a;
-  --selection-fg: #f1ede2;
+  --bg: #08100c;
+  --fg: #c9f2d5;
+  --muted: #5e8a6c;
+  --accent: #4fe08a;
+  --border: #1c2b20;
+  --selection-bg: #4fe08a;
+  --selection-fg: #08100c;
   --max-width: 640px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #08100c;
-    --fg: #c9f2d5;
-    --muted: #5e8a6c;
-    --accent: #4fe08a;
-    --border: #1c2b20;
-    --selection-bg: #4fe08a;
-    --selection-fg: #08100c;
-  }
 }
 
 * { box-sizing: border-box; }
