@@ -1,6 +1,6 @@
 ---
-title: "Chi vuole cambiarti, ma non è mai stato te"
-date: 2026-09-16 10:00:00 +0200
+title: "Il muscolo che non alleniamo"
+date: 2026-09-17 10:00:00 +0200
 ---
 C'è una frase che mi è uscita quasi per caso, una sera, parlando con C. sul balcone. La discussione era partita da tutt'altro (da come si possa davvero insegnare qualcosa "dal basso", senza calarlo dall'alto come un manuale) ed è scivolata verso la fede senza che nessuno dei due l'avesse cercato, come succede quando due discorsi diversi finiscono per dire la stessa cosa. È uscita così: non c'è cattolico più vero di chi non ha mai creduto, e non esiste ateo più convinto di chi è nato credente. Detta meglio, forse, per toglierle l'aria di indovinello: si crede davvero solo se si sa anche cosa significhi non credere, e non si crede davvero solo se si è passati per la fede fino in fondo, non solo sfiorata. Me la sono rigirata in testa per giorni, cercando la falla, e non l'ho trovata, almeno non nella fede.
 
