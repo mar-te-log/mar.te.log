@@ -1,4 +1,5 @@
 ---
+published: false
 title: "benvenuti"
 date: 2026-09-15 10:00:00 +0200
 excerpt: "Il primo articolo, giusto per iniziare."
