@@ -1,5 +1,5 @@
 ---
-title: "Chi parla per gli ultimi, ma da dove"
+title: "Caviale per le pantere"
 date: 2026-09-16 10:00:00 +0200
 ---
 
