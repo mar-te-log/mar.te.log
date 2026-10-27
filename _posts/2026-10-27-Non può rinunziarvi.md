@@ -1,6 +1,6 @@
 ---
 title: "Non può rinunziarvi"
-date: 2026-10-27 10:00:00 +0200
+date: 2026-10-27 10:00:00 +0100
 ---
 
 Nei giorni delle manifestazioni contro il caro vita mi sono ritrovato a parlarne con una persona più grande di me, una di quelle che il mondo del lavoro lo conoscono da dentro, e da parecchio. Stavolta non facevo il bastian contrario: la pensavo davvero come dicevo, e lui pure. La sua lettura era semplice e, per come la raccontava, quasi stanca. I giovani vanno ai colloqui e la prima cosa che chiedono è quante sono le ferie, come se cercassero un posto dove passare il tempo; vogliono entrare nel sistema, non cambiarlo; e comunque l'Italia funziona così, la redistribuzione l'ha già rovinata una volta e non si può rifare. In mezzo, la frase che mi è rimasta addosso più delle altre: noi i sacrifici li abbiamo fatti, adesso voi volete tutto garantito.
